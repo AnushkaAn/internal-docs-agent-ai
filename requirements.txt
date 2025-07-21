@@ -1,0 +1,23 @@
+# Core LlamaIndex + Embeddings
+llama-index==0.10.26
+llama-index-embeddings-huggingface==0.1.5
+
+# Hugging Face Transformers (used for embedding models)
+transformers>=4.40.0
+sentence-transformers>=2.2.2
+torch>=2.1.0
+
+# Backend LLM (choose one, this is free)
+groq==0.5.0
+ # Or another LLM provider if using e.g. Mistral/Groq
+
+# Optional: If using local models with Hugging Face
+accelerate>=0.27.2
+
+# Streamlit/Gradio (if your chatbot uses a UI)
+streamlit==1.35.0  # or gradio==4.34.0
+
+# Other utilities
+tqdm
+requests
+python-dotenv  # for loading .env API keys
